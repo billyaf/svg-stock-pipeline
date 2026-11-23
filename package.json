@@ -1,0 +1,13 @@
+{
+  "name": "svg-stock-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Code-generated vector stock assets (SVG) and an SVG to EPS + JPG + CSV export pipeline with transparency flattening.",
+  "scripts": {
+    "demo": "node generator/build.mjs examples/geo-confetti geo-confetti",
+    "export": "node pipeline/export.mjs examples/geo-confetti/upload examples/geo-confetti/export --meta examples/geo-confetti/metadata.csv"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}
